@@ -3,3 +3,25 @@ Successivamente preparare array con 5 mail con scrittura estesa
 senza ridurre e confrontare il dato - creare campo in html a prescindere dal 
 check con console.log - per ora rendere tutto visibile in pagina
 che sia valida o meno
+*/
+
+var mailUser = prompt ("Inserire email");
+
+document.getElementById("mailUser").innerHTML = mailUser;
+
+// array email da confrontare MALEDETTI APICI!!!!!!!!
+
+var mailList = [ "pi@pi.com", "ci@pi.com", "di@pi.com", "effe@pi.com", "me@pi.com"];
+
+// mostra tutte le mail presenti
+document.getElementById("mailList").innerHTML = mailList;
+
+// confronto ed esclusione
+
+
+
+
+
+
+
+
