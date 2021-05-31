@@ -17,14 +17,21 @@ var mailList = [ "pi@pi.com", "ci@pi.com", "di@pi.com", "effe@pi.com", "me@pi.co
 document.getElementById("mailList").innerHTML = mailList;
 
 // confronto ed esclusione
+// versione precedente non gira con else - applico soluzione check lezione
 
+var check = false;
 
 for (var i = 0; i < mailList.length; i++){
       if(mailList[i] === mailUser){
-            document.getElementById("checkMail").innerHTML = "Sei nella lista";
-      } else {
-            document.getElementById("checkMail").innerHTML = "Non sei nella lista";
-      }
+            check = true;
+      } 
+}
+            
+
+if (check === true){
+      document.getElementById("checkMail").innerHTML = "Sei nella lista";
+}else {
+      document.getElementById("checkMail").innerHTML = "Non sei nella lista";
 }
 
 
@@ -41,9 +48,9 @@ document.getElementById("randomComputer").innerHTML = randomComputer;
 
 // dichiara vittoria
 if (randomUser > randomComputer) {
-      document.getElementById("winner").innerHTML = "ha vinto l'utente";
+      document.getElementById("winner").innerHTML = "Ha vinto l'utente";
 } else if(randomComputer > randomUser) {
-      document.getElementById("winner").innerHTML = "ha vinto il computer";
+      document.getElementById("winner").innerHTML = "Ha vinto il computer";
 } else{
       document.getElementById("winner").innerHTML = "Pari";
 }
