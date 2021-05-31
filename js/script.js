@@ -26,6 +26,15 @@ for (var i = 0; i < mailList.length; i++){
 }
 
 
+// ============================================================================
+// Generiamo due numeri con Math.floor d e confrontiamoli con if e if else
+
+
+var randomUser = Math.floor(Math.random() * 6) + 1;
+var randomComputer = Math.floor(Math.random() * 6) + 1;
+
+
+
 
 
 
