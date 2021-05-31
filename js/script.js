@@ -21,7 +21,9 @@ document.getElementById("mailList").innerHTML = mailList;
 
 for (var i = 0; i < mailList.length; i++){
       if(mailList[i] === mailUser){
-            document.getElementById("checkMail").innerHTML = "Sei nella lista"
+            document.getElementById("checkMail").innerHTML = "Sei nella lista";
+      } else {
+            document.getElementById("checkMail").innerHTML = "Non sei nella lista";
       }
 }
 
@@ -32,6 +34,19 @@ for (var i = 0; i < mailList.length; i++){
 
 var randomUser = Math.floor(Math.random() * 6) + 1;
 var randomComputer = Math.floor(Math.random() * 6) + 1;
+
+// stampa risultati
+document.getElementById("randomUser").innerHTML = randomUser;
+document.getElementById("randomComputer").innerHTML = randomComputer;
+
+// dichiara vittoria
+if (randomUser > randomComputer) {
+      document.getElementById("winner").innerHTML = "ha vinto l'utente";
+} else if(randomComputer > randomUser) {
+      document.getElementById("winner").innerHTML = "ha vinto il computer";
+} else{
+      document.getElementById("winner").innerHTML = "Pari";
+}
 
 
 
