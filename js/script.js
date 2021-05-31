@@ -19,7 +19,11 @@ document.getElementById("mailList").innerHTML = mailList;
 // confronto ed esclusione
 
 
-
+for (var i = 0; i < mailList.length; i++){
+      if(mailList[i] === mailUser){
+            document.getElementById("checkMail").innerHTML = "Sei nella lista"
+      }
+}
 
 
 
